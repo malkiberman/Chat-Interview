@@ -1,0 +1,224 @@
+.page {
+  padding: 2.25rem 2.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── Header ── */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.titleGroup {
+  position: relative;
+  padding-left: 1rem;
+}
+
+/* gold vertical accent bar next to title */
+.titleGroup::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  background: linear-gradient(180deg, #7c3aed, #d4a017);
+  border-radius: 999px;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1f1535;
+  margin: 0 0 0.2rem;
+  letter-spacing: -0.6px;
+}
+
+.subtitle {
+  color: #7c6f8e;
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* ── Stat Cards ── */
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.statCard {
+  flex: 1;
+  min-width: 140px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  /* gradient border trick */
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.09);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.14);
+}
+
+/* decorative top bar per card — color set inline via --accent CSS var */
+.statCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--card-accent, #7c3aed);
+  border-radius: 14px 14px 0 0;
+}
+
+/* subtle gold corner glint */
+.statCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  background: radial-gradient(circle at top right, rgba(212, 160, 23, 0.12), transparent 70%);
+  border-radius: 0 14px 0 0;
+}
+
+.statValue {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--card-accent, #7c3aed);
+  margin-bottom: 0.3rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #7c6f8e;
+  font-weight: 500;
+}
+
+/* ── Filter buttons ── */
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filterBtn {
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  border: 1.5px solid #ddd6fe;
+  background: #fff;
+  color: #6d28d9;
+  font-weight: 600;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filterBtn:hover {
+  border-color: #7c3aed;
+  background: #faf5ff;
+}
+
+.filterBtnActive {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);
+}
+
+/* ── Table ── */
+.tableWrap {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  /* gradient border */
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+  box-shadow:
+    0 0 0 1.5px #ede9fe,
+    0 4px 24px rgba(124, 58, 237, 0.08);
+  position: relative;
+}
+
+/* purple→gold top accent line on the table card */
+.tableWrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #7c3aed 0%, #a855f7 50%, #d4a017 100%);
+  z-index: 1;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.table thead tr {
+  background: linear-gradient(to right, #faf5ff, #fefce8);
+  border-bottom: 1.5px solid #ede9fe;
+}
+
+.table th {
+  padding: 1rem 1.25rem;
+  text-align: right;
+  font-weight: 700;
+  color: #6d28d9;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.table td {
+  padding: 0.95rem 1.25rem;
+  color: #374151;
+  border-bottom: 1px solid #f5f3ff;
+}
+
+.row {
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.row:hover {
+  background: #faf5ff;
+  /* gold right flash on hover (RTL) */
+  box-shadow: inset -3px 0 0 #d4a017;
+}
+
+.row:last-child td {
+  border-bottom: none;
+}
+
+.name {
+  font-weight: 700;
+  color: #1f1535 !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+}

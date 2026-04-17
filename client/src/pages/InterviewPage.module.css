@@ -1,0 +1,44 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f5f3ff 0%, #fefce8 100%);
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.doneCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(124, 58, 237, 0.12);
+  border: 1px solid #ede9fe;
+  max-width: 380px;
+  width: 100%;
+}
+
+.doneIcon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.doneTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1f1535;
+  margin: 0 0 0.6rem;
+}
+
+.doneSub {
+  color: #7c6f8e;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.7;
+}

@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  height: 60px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 1px 0 0 #ede9fe, 0 2px 12px rgba(124, 58, 237, 0.06);
+  flex-shrink: 0;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7c3aed 0%, #a855f7 40%, #d4a017 100%);
+}
+
+.brand {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #7c3aed 30%, #d4a017 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  margin-inline-start: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7c6f8e;
+}
