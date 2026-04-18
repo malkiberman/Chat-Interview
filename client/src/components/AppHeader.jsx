@@ -1,10 +1,20 @@
+import Logo from './Logo';
 import styles from './AppHeader.module.css';
 
-export default function AppHeader({ subtitle }) {
+export default function AppHeader({ subtitle, showRecruiterButton = false, onRecruiterClick }) {
   return (
     <header className={styles.header}>
-      <span className={styles.brand}>ScreenAI</span>
-      {subtitle ? <span className={styles.subtitle}>{subtitle}</span> : null}
+      
+        <Logo></Logo>
+        
+        {subtitle && <h2 className={styles.subtitle}>{subtitle}</h2>}
+        
+        {showRecruiterButton && (
+          <button onClick={onRecruiterClick} className={styles.recruiterBtn}>
+            
+          </button>
+        )}
+    
     </header>
   );
 }

@@ -1,0 +1,102 @@
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.logoMain {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logoAlt {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logoDots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 36px;
+  height: 36px;
+}
+
+.dotsRow1 {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.dotsRow2 {
+  display: flex;
+  justify-content: center;
+}
+
+.dotsRow3 {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+}
+
+.dot1, .dot2, .dot3, .dot4, .dot5 {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-pink);
+  animation: bounce 2.5s ease-in-out infinite;
+}
+
+.dot1 {
+  animation-delay: 0s;
+}
+
+.dot2 {
+  animation-delay: 0.15s;
+}
+
+.dot3 {
+  animation-delay: 0.3s;
+}
+
+.dot4 {
+  animation-delay: 0.15s;
+}
+
+.dot5 {
+  animation-delay: 0s;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.75rem;
+  }
+  
+  .logoDots {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .dot1, .dot2, .dot3, .dot4, .dot5 {
+    width: 8px;
+    height: 8px;
+  }
+}
+

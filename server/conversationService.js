@@ -13,10 +13,15 @@ function parseJsonResponse(response) {
   if (trimmed.startsWith('{\n  {')) {
     trimmed = trimmed.replace(/^\{\s*\{/, '{');
   }
-  // Remove trailing non-JSON characters after the last closing curly brace
+  // Remove any trailing non-JSON content after the last closing curly brace
   const lastBrace = trimmed.lastIndexOf('}');
-  if (lastBrace !== -1 && lastBrace < trimmed.length - 1) {
+  if (lastBrace !== -1) {
     trimmed = trimmed.slice(0, lastBrace + 1);
+  }
+  // Remove any leading non-JSON content before the first opening curly brace
+  const firstBrace = trimmed.indexOf('{');
+  if (firstBrace > 0) {
+    trimmed = trimmed.slice(firstBrace);
   }
   try {
     return JSON.parse(trimmed);

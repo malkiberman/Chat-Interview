@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AppHeader from '../components/AppHeader';
 import { fetchCandidates } from '../services/api';
 import styles from './Dashboard.module.css';
 
@@ -65,6 +66,8 @@ export default function Dashboard() {
 
   return (
     <div className={styles.page} dir="rtl">
+  
+      
       <div className={styles.header}>
         <div className={styles.titleGroup}>
           <h1 className={styles.title}>לוח מועמדים</h1>
@@ -73,9 +76,9 @@ export default function Dashboard() {
       </div>
 
       <div className={styles.cards}>
-        <StatCard label="סה״כ מועמדים" value={stats.total} accent="#7c3aed" />
+        <StatCard label="סה״כ מועמדים" value={stats.total} accent="#1f3563" />
         <StatCard label="מעל 80%" value={stats.above80} accent="#16a34a" />
-        <StatCard label="50 - 80%" value={stats.mid} accent="#d4a017" />
+        <StatCard label="50 - 80%" value={stats.mid} accent="#e83b7c" />
         <StatCard label="מתחת ל-50%" value={stats.below50} accent="#dc2626" />
       </div>
 

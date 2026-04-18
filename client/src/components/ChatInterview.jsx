@@ -135,7 +135,7 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
         <div style={styles.headerLeft}>
           <div style={styles.headerAvatar}>AI</div>
           <div>
-            <div style={styles.headerName}>מראיין ScreenAI</div>
+            <div style={styles.headerName}>מיטל - מראיינת AI</div>
             <div style={styles.headerSub}>ראיון אוטומטי למועמד</div>
           </div>
         </div>
@@ -151,9 +151,9 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
           <div
             style={{
               ...styles.progressChip,
-              background: done ? '#dcfce7' : '#f3f0ff',
-              color: done ? '#16a34a' : '#7c3aed',
-              border: done ? '1px solid #bbf7d0' : '1px solid #ddd6fe',
+              background: done ? '#dcfce7' : '#f5f3f8',
+              color: done ? '#16a34a' : '#1f3563',
+              border: done ? '1px solid #bbf7d0' : '1px solid #d4d0dc',
             }}
           >
             {done ? 'הסתיים' : `${Math.min(currentIndex + 1, interviewQuestions.length)} / ${interviewQuestions.length}`}
@@ -181,7 +181,7 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
         <div
           style={{
             ...styles.textareaWrap,
-            border: isRecording ? '1.5px solid #d4a017' : '1.5px solid #ddd6fe',
+            border: isRecording ? '2px solid #d4a017' : '2px solid #d4d0dc',
             boxShadow: isRecording ? '0 0 0 3px rgba(212,160,23,0.18)' : 'none',
           }}
         >
@@ -191,7 +191,7 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
             onKeyDown={handleKeyDown}
             placeholder={done ? 'הראיון הסתיים.' : isRecording ? 'מאזין...' : 'הקלד/י תשובה...'}
             disabled={isInputDisabled}
-            style={{ ...styles.textarea, color: isRecording ? '#92400e' : '#1f1535' }}
+            style={{ ...styles.textarea, color: isRecording ? '#e83b7c' : '#1f1535' }}
           />
 
           {supported ? (
@@ -201,7 +201,7 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
               title={isRecording ? 'עצור הקלטה' : 'התחל הקלטה'}
               style={{
                 ...styles.recBtn,
-                boxShadow: isRecording ? '0 0 0 3px #d4a017, 0 0 0 6px rgba(212,160,23,0.22)' : '0 0 0 2px #ddd6fe',
+                boxShadow: isRecording ? '0 0 0 3px #d4a017, 0 0 0 6px rgba(212,160,23,0.22)' : '0 0 0 2px #d4d0dc',
                 animation: isRecording ? 'recPulse 1.2s ease-in-out infinite' : 'none',
               }}
             >
@@ -210,7 +210,7 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
                   <rect x="5" y="5" width="14" height="14" rx="2" />
                 </svg>
               ) : (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="#7c3aed">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#1f3563">
                   <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
                   <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
                 </svg>
@@ -228,22 +228,22 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
-    maxWidth: '560px',
-    height: '540px',
+    maxWidth: '700px',
+    height: '700px',
     background: '#fff',
-    borderRadius: '16px',
-    border: '1px solid #ede9fe',
+    borderRadius: '20px',
+    border: '1px solid #d4d0dc',
     overflow: 'hidden',
-    boxShadow: '0 2px 16px rgba(124,58,237,0.09)',
+    boxShadow: '0 8px 32px rgba(13,27,61,0.12)',
   },
   header: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '0.85rem 1.25rem',
-    borderBottom: '1px solid #f3f0ff',
-    borderTop: '3px solid transparent',
-    backgroundImage: 'linear-gradient(to right, #faf5ff, #fefce8), linear-gradient(90deg, #7c3aed, #d4a017)',
+    padding: '1.25rem 1.75rem',
+    borderBottom: '2px solid #d4d0dc',
+    borderTop: '4px solid transparent',
+    backgroundImage: 'linear-gradient(to right, #f5f3f8, #faf8fc), linear-gradient(90deg, #1f3563, #d4a017)',
     backgroundOrigin: 'border-box',
     backgroundClip: 'padding-box, border-box',
     flexShrink: 0,
@@ -259,21 +259,21 @@ const styles = {
     gap: '0.6rem',
   },
   headerAvatar: {
-    width: '38px',
-    height: '38px',
+    width: '48px',
+    height: '48px',
     borderRadius: '50%',
-    background: 'linear-gradient(135deg, #7c3aed, #a855f7)',
+    background: 'linear-gradient(135deg, #1f3563, #2d4a80)',
     color: '#fff',
-    fontSize: '0.72rem',
+    fontSize: '0.85rem',
     fontWeight: 800,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    boxShadow: '0 0 0 2px #d4a017',
+    boxShadow: '0 0 0 3px #d4a017, 0 0 0 6px rgba(212,160,23,0.15)',
     flexShrink: 0,
   },
-  headerName: { fontWeight: 700, fontSize: '0.9rem', color: '#1f1535', lineHeight: 1.3 },
-  headerSub: { fontSize: '0.72rem', color: '#7c6f8e', marginTop: '1px' },
+  headerName: { fontWeight: 700, fontSize: '1rem', color: '#1f1535', lineHeight: 1.3 },
+  headerSub: { fontSize: '0.8rem', color: '#7c6f8e', marginTop: '2px' },
   progressChip: {
     padding: '0.28rem 0.75rem',
     borderRadius: '999px',
@@ -305,45 +305,48 @@ const styles = {
   feed: {
     flex: 1,
     overflowY: 'auto',
-    padding: '1.25rem 1rem',
+    padding: '1.75rem 1.5rem',
     display: 'flex',
     flexDirection: 'column',
-    gap: '0.85rem',
+    gap: '1.125rem',
+    background: '#faf8fc',
   },
   botAvatar: {
-    width: '28px',
-    height: '28px',
+    width: '36px',
+    height: '36px',
     borderRadius: '50%',
-    background: 'linear-gradient(135deg, #7c3aed, #a855f7)',
+    background: 'linear-gradient(135deg, #1f3563, #2d4a80)',
     color: '#fff',
-    fontSize: '0.6rem',
+    fontSize: '0.7rem',
     fontWeight: 800,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
     alignSelf: 'flex-end',
-    marginLeft: '0.5rem',
-    marginBottom: '2px',
+    marginLeft: '0.75rem',
+    marginBottom: '3px',
   },
   botBubble: {
-    maxWidth: '72%',
-    background: '#f5f3ff',
-    border: '1px solid #ede9fe',
+    maxWidth: '85%',
+    background: '#f5f3f8',
+    border: '2px solid #d4d0dc',
     color: '#1f1535',
-    padding: '0.7rem 1rem',
-    borderRadius: '14px 0 14px 14px',
-    fontSize: '0.875rem',
-    lineHeight: 1.55,
+    padding: '0.875rem 1.25rem',
+    borderRadius: '16px 0 16px 16px',
+    fontSize: '0.95rem',
+    lineHeight: 1.6,
+    fontWeight: 500,
   },
   userBubble: {
-    maxWidth: '72%',
-    background: 'linear-gradient(135deg, #7c3aed, #6d28d9)',
+    maxWidth: '85%',
+    background: 'linear-gradient(135deg, #1f3563, #2d4a80)',
     color: '#fff',
-    padding: '0.7rem 1rem',
-    borderRadius: '14px 14px 14px 0',
-    fontSize: '0.875rem',
-    lineHeight: 1.55,
+    padding: '0.875rem 1.25rem',
+    borderRadius: '16px 16px 16px 0',
+    fontSize: '0.95rem',
+    lineHeight: 1.6,
+    fontWeight: 500,
   },
   warning: {
     background: '#fef9c3',
@@ -361,10 +364,10 @@ const styles = {
   },
   inputRow: {
     display: 'flex',
-    gap: '0.6rem',
-    padding: '0.85rem 1rem',
-    borderTop: '1px solid #f3f0ff',
-    background: '#faf8ff',
+    gap: '0.8rem',
+    padding: '1.25rem 1.5rem',
+    borderTop: '2px solid #d4d0dc',
+    background: '#faf8fc',
     alignItems: 'flex-end',
   },
   textareaWrap: {
@@ -374,28 +377,29 @@ const styles = {
     alignItems: 'center',
     borderRadius: '12px',
     background: '#fff',
-    transition: 'border 0.15s, box-shadow 0.15s',
+    border: '2px solid #d4d0dc',
+    transition: 'border 0.2s, box-shadow 0.2s',
     overflow: 'hidden',
   },
   textarea: {
     flex: 1,
-    padding: '0.65rem 3rem 0.65rem 0.9rem',
+    padding: '0.75rem 3.5rem 0.75rem 1rem',
     border: 'none',
     outline: 'none',
-    fontSize: '0.875rem',
+    fontSize: '0.95rem',
     resize: 'none',
     fontFamily: 'inherit',
     background: 'transparent',
-    lineHeight: 1.5,
+    lineHeight: 1.6,
     color: '#1f1535',
-    height: '52px',
+    height: '60px',
     overflowY: 'auto',
   },
   recBtn: {
     position: 'absolute',
-    left: '0.5rem',
-    width: '36px',
-    height: '36px',
+    left: '0.65rem',
+    width: '40px',
+    height: '40px',
     borderRadius: '50%',
     border: 'none',
     background: '#fff',

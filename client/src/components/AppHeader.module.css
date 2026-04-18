@@ -1,37 +1,76 @@
 .header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 0 2rem;
-  height: 60px;
-  background: #fff;
-  position: relative;
-  box-shadow: 0 1px 0 0 #ede9fe, 0 2px 12px rgba(124, 58, 237, 0.06);
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
   flex-shrink: 0;
 }
 
-.header::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #7c3aed 0%, #a855f7 40%, #d4a017 100%);
+.logoMain {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.brand {
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #7c3aed 30%, #d4a017 100%);
+.logoAlt {
+  background: var(--gradient-accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .subtitle {
-  margin-inline-start: 1rem;
-  font-size: 0.85rem;
+  flex: 1;
+  text-align: center;
+  font-size: 1.125rem;
   font-weight: 600;
-  color: #7c6f8e;
+  color: var(--text);
+  margin: 0;
+}
+
+.recruiterBtn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  background: var(--gradient-button);
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.4, 1);
+  box-shadow: var(--shadow-base);
+  white-space: nowrap;
+}
+
+.recruiterBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.recruiterBtn:active {
+  transform: translateY(-1px);
 }

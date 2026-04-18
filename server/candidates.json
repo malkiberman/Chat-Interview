@@ -9,8 +9,18 @@
     "timestamp": "2026-04-16T09:00:00.000Z",
     "experienceLevel": 2,
     "recommendedRole": 2,
-    "technical": { "location": 1, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 82, "verbalAbility": 90, "peopleSkills": 95, "salesOrientation": 65, "targetOrientation": 78 },
+    "technical": {
+      "location": 1,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 82,
+      "verbalAbility": 90,
+      "peopleSkills": 95,
+      "salesOrientation": 65,
+      "targetOrientation": 78
+    },
     "summary": "שירה שירותית, חיובית, עם ניסיון בשימור לקוחות ועמידה ביעדים."
   },
   {
@@ -23,8 +33,18 @@
     "timestamp": "2026-04-16T10:30:00.000Z",
     "experienceLevel": 3,
     "recommendedRole": 1,
-    "technical": { "location": 1, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 95, "verbalAbility": 78, "peopleSkills": 80, "salesOrientation": 99, "targetOrientation": 92 },
+    "technical": {
+      "location": 1,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 95,
+      "verbalAbility": 78,
+      "peopleSkills": 80,
+      "salesOrientation": 99,
+      "targetOrientation": 92
+    },
     "summary": "רון מכירתי, עם ניסיון ניהולי, התמדה ועמידה ביעדים."
   },
   {
@@ -37,8 +57,18 @@
     "timestamp": "2026-04-16T12:00:00.000Z",
     "experienceLevel": 2,
     "recommendedRole": 1,
-    "technical": { "location": 2, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 88, "verbalAbility": 85, "peopleSkills": 90, "salesOrientation": 80, "targetOrientation": 85 },
+    "technical": {
+      "location": 2,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 88,
+      "verbalAbility": 85,
+      "peopleSkills": 90,
+      "salesOrientation": 80,
+      "targetOrientation": 85
+    },
     "summary": "ליאת משלבת שירות ומכירות, יודעת להתמודד עם אתגרים ולסגור עסקאות."
   },
   {
@@ -51,8 +81,18 @@
     "timestamp": "2026-04-16T13:00:00.000Z",
     "experienceLevel": 2,
     "recommendedRole": 2,
-    "technical": { "location": 3, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 85, "verbalAbility": 90, "peopleSkills": 92, "salesOrientation": 70, "targetOrientation": 80 },
+    "technical": {
+      "location": 3,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 85,
+      "verbalAbility": 90,
+      "peopleSkills": 92,
+      "salesOrientation": 70,
+      "targetOrientation": 80
+    },
     "summary": "מועמדת שירותית, בעלת גישה חיובית ויכולת שימור לקוחות גבוהה."
   },
   {
@@ -65,8 +105,18 @@
     "timestamp": "2026-04-16T14:00:00.000Z",
     "experienceLevel": 3,
     "recommendedRole": 1,
-    "technical": { "location": 1, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 95, "verbalAbility": 80, "peopleSkills": 78, "salesOrientation": 98, "targetOrientation": 90 },
+    "technical": {
+      "location": 1,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 95,
+      "verbalAbility": 80,
+      "peopleSkills": 78,
+      "salesOrientation": 98,
+      "targetOrientation": 90
+    },
     "summary": "מועמד מכירתי עם ניסיון ניהולי, עמידה ביעדים ויכולת התמדה גבוהה."
   },
   {
@@ -79,8 +129,18 @@
     "timestamp": "2026-04-16T15:00:00.000Z",
     "experienceLevel": 1,
     "recommendedRole": 2,
-    "technical": { "location": 2, "availability": 0, "hasRelativeInCompany": 1 },
-    "scores": { "motivation": 70, "verbalAbility": 75, "peopleSkills": 80, "salesOrientation": 60, "targetOrientation": 72 },
+    "technical": {
+      "location": 2,
+      "availability": 0,
+      "hasRelativeInCompany": 1
+    },
+    "scores": {
+      "motivation": 70,
+      "verbalAbility": 75,
+      "peopleSkills": 80,
+      "salesOrientation": 60,
+      "targetOrientation": 72
+    },
     "summary": "מירב בעלת ניסיון בשירות לקוחות, עם גישה חיובית ויכולת למידה מהירה."
   },
   {
@@ -93,8 +153,18 @@
     "timestamp": "2026-04-16T16:00:00.000Z",
     "experienceLevel": 2,
     "recommendedRole": 1,
-    "technical": { "location": 3, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 65, "verbalAbility": 70, "peopleSkills": 75, "salesOrientation": 60, "targetOrientation": 68 },
+    "technical": {
+      "location": 3,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 65,
+      "verbalAbility": 70,
+      "peopleSkills": 75,
+      "salesOrientation": 60,
+      "targetOrientation": 68
+    },
     "summary": "יוסי בעל ניסיון במכירות שטח, יודע להתמודד עם התנגדויות ומכוון ליעדים."
   },
   {
@@ -107,8 +177,18 @@
     "timestamp": "2026-04-16T17:00:00.000Z",
     "experienceLevel": 2,
     "recommendedRole": 2,
-    "technical": { "location": 1, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 82, "verbalAbility": 85, "peopleSkills": 88, "salesOrientation": 75, "targetOrientation": 80 },
+    "technical": {
+      "location": 1,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 82,
+      "verbalAbility": 85,
+      "peopleSkills": 88,
+      "salesOrientation": 75,
+      "targetOrientation": 80
+    },
     "summary": "תמר שירותית, עם ניסיון במוקד טלפוני, בעלת כישורים בין אישיים גבוהים."
   },
   {
@@ -121,8 +201,18 @@
     "timestamp": "2026-04-16T18:00:00.000Z",
     "experienceLevel": 1,
     "recommendedRole": 2,
-    "technical": { "location": 2, "availability": 0, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 68, "verbalAbility": 72, "peopleSkills": 70, "salesOrientation": 65, "targetOrientation": 70 },
+    "technical": {
+      "location": 2,
+      "availability": 0,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 68,
+      "verbalAbility": 72,
+      "peopleSkills": 70,
+      "salesOrientation": 65,
+      "targetOrientation": 70
+    },
     "summary": "דנה בעלת ניסיון בשירות לקוחות, עם גישה חיובית ויכולת למידה מהירה."
   },
   {
@@ -135,8 +225,91 @@
     "timestamp": "2026-04-16T19:00:00.000Z",
     "experienceLevel": 3,
     "recommendedRole": 1,
-    "technical": { "location": 1, "availability": 1, "hasRelativeInCompany": 0 },
-    "scores": { "motivation": 90, "verbalAbility": 88, "peopleSkills": 85, "salesOrientation": 92, "targetOrientation": 90 },
+    "technical": {
+      "location": 1,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 90,
+      "verbalAbility": 88,
+      "peopleSkills": 85,
+      "salesOrientation": 92,
+      "targetOrientation": 90
+    },
     "summary": "אבי מכירתי, עם ניסיון רב במוקדי מכירות, יודע להוביל צוותים ולהשיג יעדים."
+  },
+  {
+    "id": "sara@gmail.com-1776429895349",
+    "candidateId": "sara@gmail.com",
+    "fullName": "שרה לוי",
+    "email": "sara@gmail.com",
+    "phone": "0558964454",
+    "score": 62,
+    "timestamp": "2026-04-17T12:44:55.349Z",
+    "experienceLevel": 2,
+    "recommendedRole": 2,
+    "technical": {
+      "location": 3,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 85,
+      "verbalAbility": 65,
+      "peopleSkills": 80,
+      "salesOrientation": 30,
+      "targetOrientation": 20
+    },
+    "summary": "מועמד/ת עם ניסיון רלוונטי, שירותיות גבוהה ורצון אמיתי לסייע."
+  },
+  {
+    "id": "559120b@gmail.com-1776547359066",
+    "candidateId": "559120b@gmail.com",
+    "fullName": "שרה",
+    "email": "559120b@gmail.com",
+    "phone": "כק",
+    "score": 62,
+    "timestamp": "2026-04-18T21:22:39.066Z",
+    "experienceLevel": 2,
+    "recommendedRole": 2,
+    "technical": {
+      "location": 3,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 85,
+      "verbalAbility": 65,
+      "peopleSkills": 80,
+      "salesOrientation": 30,
+      "targetOrientation": 20
+    },
+    "summary": "מועמד/ת עם ניסיון רלוונטי, שירותיות גבוהה ורצון אמיתי לסייע.",
+    "updatedAt": "2026-04-18T21:22:39.070Z"
+  },
+  {
+    "id": "michal@gmail.com-1776548242032",
+    "candidateId": "michal@gmail.com",
+    "fullName": "מיכל",
+    "email": "michal@gmail.com",
+    "phone": "0558965545",
+    "score": 62,
+    "timestamp": "2026-04-18T21:37:22.032Z",
+    "experienceLevel": 2,
+    "recommendedRole": 2,
+    "technical": {
+      "location": 3,
+      "availability": 1,
+      "hasRelativeInCompany": 0
+    },
+    "scores": {
+      "motivation": 85,
+      "verbalAbility": 65,
+      "peopleSkills": 80,
+      "salesOrientation": 30,
+      "targetOrientation": 20
+    },
+    "summary": "מועמד/ת עם ניסיון רלוונטי, שירותיות גבוהה ורצון אמיתי לסייע."
   }
 ]

@@ -17,7 +17,7 @@
   padding-left: 1rem;
 }
 
-/* gold vertical accent bar next to title */
+/* Navy to pink vertical accent bar next to title */
 .titleGroup::before {
   content: '';
   position: absolute;
@@ -25,20 +25,20 @@
   top: 4px;
   bottom: 4px;
   width: 3px;
-  background: linear-gradient(180deg, #7c3aed, #d4a017);
+  background: linear-gradient(180deg, var(--primary), var(--accent-pink));
   border-radius: 999px;
 }
 
 .title {
   font-size: 1.75rem;
   font-weight: 800;
-  color: #1f1535;
+  color: var(--primary);
   margin: 0 0 0.2rem;
   letter-spacing: -0.6px;
 }
 
 .subtitle {
-  color: #7c6f8e;
+  color: var(--text-secondary);
   font-size: 0.875rem;
   margin: 0;
 }
@@ -62,13 +62,13 @@
   /* gradient border trick */
   border: 1.5px solid transparent;
   background-clip: padding-box;
-  box-shadow: 0 2px 12px rgba(124, 58, 237, 0.09);
+  box-shadow: 0 2px 12px rgba(13, 27, 61, 0.09);
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
 .statCard:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.14);
+  box-shadow: 0 6px 20px rgba(13, 27, 61, 0.14);
 }
 
 /* decorative top bar per card — color set inline via --accent CSS var */
@@ -83,7 +83,7 @@
   border-radius: 14px 14px 0 0;
 }
 
-/* subtle gold corner glint */
+/* subtle pink corner glint */
 .statCard::after {
   content: '';
   position: absolute;
@@ -91,7 +91,7 @@
   right: 0;
   width: 48px;
   height: 48px;
-  background: radial-gradient(circle at top right, rgba(212, 160, 23, 0.12), transparent 70%);
+  background: radial-gradient(circle at top right, rgba(232, 59, 124, 0.12), transparent 70%);
   border-radius: 0 14px 0 0;
 }
 

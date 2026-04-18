@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import AppHeader from '../components/AppHeader';
 import ChatInterview from '../components/ChatInterview';
+import CompletionPage from './CompletionPage';
 import styles from './InterviewPage.module.css';
 
 const LS_KEY = 'screenai_current_candidate';
@@ -19,26 +20,21 @@ export default function InterviewPage() {
   }
 
   return (
-    <div className={styles.page} dir="rtl">
-      <AppHeader subtitle={`ברוך הבא, ${candidateInfo.fullName}`} />
+    <>
+      {done ? (
+        <CompletionPage candidateInfo={candidateInfo} />
+      ) : (
+        <div className={styles.page} dir="rtl">
+          <AppHeader subtitle={`ברוך הבא, ${candidateInfo.fullName}`} />
 
-      <div className={styles.body}>
-        {done ? (
-          <div className={styles.doneCard}>
-            <div className={styles.doneIcon}>✅</div>
-            <h2 className={styles.doneTitle}>תודה רבה!</h2>
-            <p className={styles.doneSub}>
-              הראיון שלך נשלח בהצלחה.<br />
-              נבחן את תשובותיך ונחזור אליך בקרוב.
-            </p>
+          <div className={styles.body}>
+            <ChatInterview
+              candidateInfo={candidateInfo}
+              onConversationEnd={() => setDone(true)}
+            />
           </div>
-        ) : (
-          <ChatInterview
-            candidateInfo={candidateInfo}
-            onConversationEnd={() => setDone(true)}
-          />
-        )}
-      </div>
-    </div>
+        </div>
+      )}
+    </>
   );
 }

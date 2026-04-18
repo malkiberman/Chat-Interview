@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import AppHeader from '../components/AppHeader';
 import { fetchCandidateById } from '../services/api';
 import styles from './CandidateAnalysis.module.css';
 
@@ -89,14 +90,22 @@ export default function CandidateAnalysis() {
   const parameters = useMemo(() => candidate?.parameters || [], [candidate]);
 
   if (loading) {
-    return <div className={styles.page}>טוען נתונים...</div>;
+    return (
+      <div className={styles.page}>
+        <AppHeader />
+        <div>טוען נתונים...</div>
+      </div>
+    );
   }
 
   if (error || !candidate) {
     return (
       <div className={styles.page}>
-        <p>{error || 'מועמד לא נמצא.'}</p>
-        <button onClick={() => navigate('/dashboard')}>חזרה ללוח הבקרה</button>
+        <AppHeader />
+        <div>
+          <p>{error || 'מועמד לא נמצא.'}</p>
+          <button onClick={() => navigate('/dashboard')}>חזרה ללוח הבקרה</button>
+        </div>
       </div>
     );
   }
@@ -105,6 +114,8 @@ export default function CandidateAnalysis() {
 
   return (
     <div className={styles.page} dir="rtl">
+      <AppHeader />
+      
       <button className={styles.back} onClick={() => navigate('/dashboard')}>
         חזרה ללוח הבקרה
       </button>

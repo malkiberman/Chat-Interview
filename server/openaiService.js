@@ -60,16 +60,17 @@ async function readQaJsonFromEnv() {
 }
 
 async function sendPromptAndQaFromEnv(answers = [], questions = [], model = "gpt-4o-mini") {
-  const promptText = await readPromptFromEnv();
-  const qaData = Array.isArray(questions) && questions.length > 0 ? questions : await readQaJsonFromEnv();
-  const combinedPrompt = `{
-  { "technical": { "location": 3, "availability": 1, "hasRelativeInCompany": 0 }, "scores": { "motivation": 85, "verbalAbility": 65, "peopleSkills": 80, "salesOrientation": 30, "targetOrientation": 20 }, "experienceLevel": 2, "recommendedRole": 2, "summary": "מועמדת עם ניסיון רלוונטי משמעותי משירות לקוחות בקופת חולים, המציגה רמת שירותיות גבוהה ורצון אמיתי לסייע.", "insights": [ "ניסיון מוכח בעבודה מול קהל", "יכולת הרגעה במצבי לחץ", "מיקוד גבוה בשביעות רצון", "סבלנות רבה בטיפול בהתנגדויות" ], "recommendedQuestions": [ "איך תתמודדי עם עבודה שדורשת עמידה ביעדים כמותיים?", "תני דוגמה למקרה שבו נאלצת לסרב לבקשת לקוח", "מה יעזור לך לשמור על אנרגיה ביום עם עומס שיחות?" ] }  
 
-}`;
-  // if (process.env.OPENAI_API_KEY) {
-  //   return createChatCompletion(combinedPrompt, model);
-  // }
-  return combinedPrompt;
+  // Always return a static, valid JSON string for demo/dev mode
+  return JSON.stringify({
+    technical: { location: 3, availability: 1, hasRelativeInCompany: 0 },
+    scores: { motivation: 85, verbalAbility: 65, peopleSkills: 80, salesOrientation: 30, targetOrientation: 20 },
+    experienceLevel: 2,
+    recommendedRole: 2,
+    summary: "מועמד/ת עם ניסיון רלוונטי, שירותיות גבוהה ורצון אמיתי לסייע.",
+    insights: [ "ניסיון בעבודה מול קהל", "יכולת הרגעה במצבי לחץ", "מיקוד בשביעות רצון", "סבלנות בטיפול בהתנגדויות" ],
+    recommendedQuestions: [ "איך תתמודד/י עם עבודה שדורשת עמידה ביעדים?", "תן/י דוגמה למקרה שבו נאלצת לסרב לבקשת לקוח", "מה יעזור לך לשמור על אנרגיה ביום עמוס?" ]
+  });
 }
 
 module.exports = {

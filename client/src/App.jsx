@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage';
 import InterviewPage from './pages/InterviewPage';
 import Dashboard from './pages/Dashboard';
 import CandidateAnalysis from './pages/CandidateAnalysis';
+import Logo from './components/Logo';
 import './App.css';
 
 const PORTAL_MODE_KEY = 'screenai_portal_mode';
@@ -24,8 +25,7 @@ function RecruiterLayout({ children }) {
   return (
     <div className="layout">
       <nav className="navbar">
-        <span className="brand">ScreenAI</span>
-        <span className="navTag">Recruiter Portal</span>
+        <Logo />
       </nav>
       <main className="content">{children}</main>
     </div>
