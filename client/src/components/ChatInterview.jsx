@@ -133,9 +133,9 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
     <div style={styles.wrapper}>
       <div style={styles.header}>
         <div style={styles.headerLeft}>
-          <div style={styles.headerAvatar}>AI</div>
+          <div style={styles.headerAvatar}>מיטל</div>
           <div>
-            <div style={styles.headerName}>מיטל - מראיינת AI</div>
+            <div style={styles.headerName}>מיטל - מראיינת </div>
             <div style={styles.headerSub}>ראיון אוטומטי למועמד</div>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function ChatInterview({ onConversationEnd, candidateInfo }) {
       <div style={styles.feed}>
         {messages.map((msg, index) => (
           <div key={index} style={{ display: 'flex', justifyContent: msg.from === 'user' ? 'flex-start' : 'flex-end' }}>
-            {msg.from === 'bot' ? <div style={styles.botAvatar}>AI</div> : null}
+            {msg.from === 'bot' ? <div style={styles.botAvatar}>מיטל</div> : null}
             <div style={msg.from === 'bot' ? styles.botBubble : styles.userBubble}>{msg.text}</div>
           </div>
         ))}
